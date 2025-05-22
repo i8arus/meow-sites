@@ -1,0 +1,105 @@
+
+.container{
+    display: grid;
+    grid-template-areas: "heading heading"
+                         "first first"
+                         "pros cons";
+}
+
+.items{
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+}
+.heading{
+    grid-area: heading;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+.first{
+    background-color: whitesmoke;
+    padding: 20px;
+    grid-area: first;
+}
+.pros{
+    background-color: whitesmoke;
+    padding: 20px;
+    grid-area: pros;
+}
+.cons{
+    background-color: red;
+    padding: 20px;
+    grid-area: cons;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading {
+  padding: 10px 0;  
+}
+
+.heading h1 {
+  font-size: 64px;  /* Big font */
+  margin: 0;        /* Remove default margin from h1 */
+  line-height: 1.1; 
+}
+img{
+    float: left;
+    padding-right: 120px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "first first"
+      "pros cons";
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .heading h1 {
+    font-size: 32px;
+  }
+
+  .items {
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .img {
+    float: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .img img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+  }
+
+  .pros, .cons {
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
